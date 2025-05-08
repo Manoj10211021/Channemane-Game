@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Channemane Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Channemane Game</h1>
+
+  <div id="game-board">
+    <div id="player-2" class="player-row"></div>
+    <div id="player-1" class="player-row"></div>
+  </div>
+
+  <div id="status">Player 1's Turn</div>
+  <button onclick="restartGame()">Restart Game</button>
+
+  <div style="margin-top: 15px;">
+    Player 1 Captured: <span id="capture-1">0</span> |
+    Player 2 Captured: <span id="capture-2">0</span>
+  </div>
+
+  <div id="last-capture" style="margin-top: 10px; font-weight: bold;"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

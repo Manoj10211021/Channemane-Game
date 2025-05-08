@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.player-row {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.pit {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    background-color: #d4a373;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    color: white;
+}
+
+.pit:hover {
+    background-color: #c98445;
+}
+
+.seed {
+    width: 12px;
+    height: 12px;
+    background-color: brown;
+    border-radius: 50%;
+    position: absolute;
+    transition: top 0.3s linear, left 0.3s linear;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.highlight {
+    box-shadow: 0 0 10px 4px rgba(255, 215, 0, 0.7);
+    border: 2px solid gold;
+}
+
+@keyframes bump {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.score-bump {
+    animation: bump 0.4s ease-in-out;
+}
+
+#last-capture {
+    margin-top: 10px;
+    color: #333;
+    font-size: 16px;
+}
